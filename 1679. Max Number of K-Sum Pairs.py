@@ -17,6 +17,7 @@ class Solution:
         left = 0
         right = len(nums) - 1
         count = 0
+        nums.sort()
         while left < right:
             if nums[left] + nums[right] == k:
                 count += 1
